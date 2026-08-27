@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Set up uv and cache dependencies
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           version: "0.12.5"
           enable-cache: true
@@ -61,7 +61,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Set up uv and cache dependencies
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.0.1
         with:
           version: "0.12.5"
           enable-cache: true
