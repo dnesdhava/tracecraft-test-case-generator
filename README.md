@@ -57,7 +57,7 @@ The generated cases remain recommendations until an authorized human reviewer ap
 
 GitHub Actions runs the locked lint, type-check, test, dependency-audit, secret-scan, and package-build checks for pushes and pull requests targeting `main`. Dependencies are resolved from `uv.lock` with `uv sync --locked --extra dev`.
 
-Successful pushes to `main` publish the Python wheel and source distribution as a GitHub Release tagged with the workflow run number. The release deployment uses GitHub's automatically provided `GITHUB_TOKEN`; no additional repository secret or variable is required. The workflow grants read-only contents access to CI and contents-write access only to the guarded release job.
+Successful pushes to `main` publish the Python wheel and source distribution as both a retained GitHub Actions artifact and a GitHub Release tagged with the workflow run number. The release deployment uses the exact package artifact produced by CI and GitHub's automatically provided `GITHUB_TOKEN`; no additional repository secret or variable is required. The workflow grants read-only contents access to CI and contents-write access only to the guarded release job.
 
 ## Render Deployment
 

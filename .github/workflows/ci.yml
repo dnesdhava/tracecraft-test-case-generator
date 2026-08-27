@@ -47,6 +47,13 @@ jobs:
         run: uv run --locked --extra dev detect-secrets scan --no-verify
       - name: Build package without secrets
         run: uv build --out-dir dist
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: tracecraft-package-${{ github.run_id }}
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 14
 
   deploy:
     name: Deploy package to GitHub Releases
@@ -56,20 +63,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Check out source
-        uses: actions/checkout@v7
-      - name: Set up Python
-        uses: actions/setup-python@v7
+      - name: Download package artifact
+        uses: actions/download-artifact@v8
         with:
-          python-version: "3.11"
-      - name: Set up uv and cache dependencies
-        uses: astral-sh/setup-uv@v10.0.1
-        with:
-          version: "0.12.5"
-          enable-cache: true
-          cache-dependency-glob: uv.lock
-      - name: Build release package without secrets
-        run: uv build --out-dir dist
+          name: tracecraft-package-${{ github.run_id }}
+          path: dist
       - name: Verify deployment token
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
