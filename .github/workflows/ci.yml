@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      PYTHONPATH: src
     steps:
       - name: Check out source
         uses: actions/checkout@v7
