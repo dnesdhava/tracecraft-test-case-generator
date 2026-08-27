@@ -1,0 +1,494 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1224 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+6 0 obj
+<< /Length 12705 >>
+stream
+0.080 0.200 0.340 rg
+BT /F2 18 Tf 1 0 0 1 48.0 765.0 Tm (End-to-End Fund Transfer Flow Diagram) Tj ET
+0.320 0.390 0.470 rg
+BT /F1 8 Tf 1 0 0 1 48.0 748.0 Tm (Fictional Demo Bank sample | vector labels and connectors are intentionally extraction-friendly) Tj ET
+0.320 0.390 0.470 rg
+BT /F2 7 Tf 1 0 0 1 1050.0 765.0 Tm (PAGE 1 OF 2) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 706.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 723.0 Tm (Customer Login) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 712.0 Tm ([BRD-PAY-011]) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 664.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 681.0 Tm (Select Fund Transfer) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 670.0 Tm ([BRD-PAY-001]) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 622.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 639.0 Tm (Enter Beneficiary Details) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 628.0 Tm ([BRD-PAY-005]) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 580.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 597.0 Tm (Validate Account Details) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 586.0 Tm ([BRD-PAY-008]) Tj ET
+1.000 0.960 0.840 rg 0.620 0.450 0.100 RG 1.1 w 630.0 569.5 m 725.0 552.0 l 630.0 534.5 l 535.0 552.0 l h B
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 615.3 558.4 Tm (Account) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 615.3 550.4 Tm (Details) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 617.4 542.4 Tm (Valid?) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 496.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 513.0 Tm (Validate Beneficiary) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 502.0 Tm ([BRD-PAY-002]) Tj ET
+1.000 0.960 0.840 rg 0.620 0.450 0.100 RG 1.1 w 630.0 485.5 m 725.0 468.0 l 630.0 450.5 l 535.0 468.0 l h B
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 606.9 471.2 Tm (Beneficiary) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 617.4 463.2 Tm (Valid?) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 412.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 429.0 Tm (Enter Transaction Amount) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 418.0 Tm ([BRD-PAY-004]) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 370.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 387.0 Tm (Validate Amount) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 376.0 Tm ([BRD-PAY-004]) Tj ET
+1.000 0.960 0.840 rg 0.620 0.450 0.100 RG 1.1 w 630.0 359.5 m 725.0 342.0 l 630.0 324.5 l 535.0 342.0 l h B
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 617.4 345.2 Tm (Amount) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 617.4 337.2 Tm (Valid?) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 286.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 303.0 Tm (Check Account Balance) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 292.0 Tm ([BRD-PAY-003]) Tj ET
+1.000 0.960 0.840 rg 0.620 0.450 0.100 RG 1.1 w 630.0 275.5 m 725.0 258.0 l 630.0 240.5 l 535.0 258.0 l h B
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 615.3 261.2 Tm (Balance) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 606.9 253.2 Tm (Sufficient?) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 202.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 219.0 Tm (Check Transaction Limit) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 208.0 Tm ([BRD-PAY-006]) Tj ET
+1.000 0.960 0.840 rg 0.620 0.450 0.100 RG 1.1 w 630.0 191.5 m 725.0 174.0 l 630.0 156.5 l 535.0 174.0 l h B
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 617.4 180.4 Tm (Within) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 619.5 172.4 Tm (Daily) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 617.4 164.4 Tm (Limit?) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 520.0 118.5 220.0 27.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 528.0 135.0 Tm (Check Duplicate Transaction) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 528.0 124.0 Tm ([BRD-PAY-007]) Tj ET
+1.000 0.960 0.840 rg 0.620 0.450 0.100 RG 1.1 w 630.0 107.5 m 725.0 90.0 l 630.0 72.5 l 535.0 90.0 l h B
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 611.1 93.2 Tm (Duplicate) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 604.8 85.2 Tm (Transaction?) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 706.5 m 630.0 691.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 696.9 m 630.0 691.5 l 627.4 696.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 664.5 m 630.0 649.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 654.9 m 630.0 649.5 l 627.4 654.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 622.5 m 630.0 607.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 612.9 m 630.0 607.5 l 627.4 612.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 580.5 m 630.0 569.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 574.9 m 630.0 569.5 l 627.4 574.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 534.5 m 630.0 523.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 528.9 m 630.0 523.5 l 627.4 528.9 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 635.0 529.0 Tm (Yes) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 496.5 m 630.0 485.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 490.9 m 630.0 485.5 l 627.4 490.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 450.5 m 630.0 439.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 444.9 m 630.0 439.5 l 627.4 444.9 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 635.0 445.0 Tm (Yes) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 412.5 m 630.0 397.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 402.9 m 630.0 397.5 l 627.4 402.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 370.5 m 630.0 359.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 364.9 m 630.0 359.5 l 627.4 364.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 324.5 m 630.0 313.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 318.9 m 630.0 313.5 l 627.4 318.9 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 635.0 319.0 Tm (Yes) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 286.5 m 630.0 275.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 280.9 m 630.0 275.5 l 627.4 280.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 240.5 m 630.0 229.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 234.9 m 630.0 229.5 l 627.4 234.9 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 635.0 235.0 Tm (Yes) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 202.5 m 630.0 191.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 196.9 m 630.0 191.5 l 627.4 196.9 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 156.5 m 630.0 145.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 150.9 m 630.0 145.5 l 627.4 150.9 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 635.0 151.0 Tm (Yes) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 118.5 m 630.0 107.5 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 112.9 m 630.0 107.5 l 627.4 112.9 l S
+0.990 0.930 0.910 rg 0.600 0.250 0.180 RG 1.1 w 55.0 537.5 300.0 29.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 63.0 555.0 Tm (Display Invalid Account Details) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 63.0 544.0 Tm (FLOW-PAY-ALT-001 | BRD-PAY-008) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+535.0 552.0 m 355.0 552.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+360.4 549.4 m 355.0 552.0 l 360.4 554.6 l S
+0.550 0.200 0.150 rg
+BT /F2 7 Tf 1 0 0 1 429.0 556.0 Tm (No) Tj ET
+0.550 0.200 0.150 rg
+BT /F2 6.5 Tf 1 0 0 1 67.0 529.0 Tm (End: Transfer Rejected) Tj ET
+0.990 0.930 0.910 rg 0.600 0.250 0.180 RG 1.1 w 55.0 453.5 300.0 29.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 63.0 471.0 Tm (Display Invalid Beneficiary) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 63.0 460.0 Tm (FLOW-PAY-ALT-002 | BRD-PAY-002) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+535.0 468.0 m 355.0 468.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+360.4 465.4 m 355.0 468.0 l 360.4 470.6 l S
+0.550 0.200 0.150 rg
+BT /F2 7 Tf 1 0 0 1 429.0 472.0 Tm (No) Tj ET
+0.550 0.200 0.150 rg
+BT /F2 6.5 Tf 1 0 0 1 67.0 445.0 Tm (End: Transfer Rejected) Tj ET
+0.990 0.930 0.910 rg 0.600 0.250 0.180 RG 1.1 w 55.0 327.5 300.0 29.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 63.0 345.0 Tm (Display Amount Validation Error) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 63.0 334.0 Tm (FLOW-PAY-ALT-003 | BRD-PAY-004) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+535.0 342.0 m 355.0 342.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+360.4 339.4 m 355.0 342.0 l 360.4 344.6 l S
+0.550 0.200 0.150 rg
+BT /F2 7 Tf 1 0 0 1 429.0 346.0 Tm (No) Tj ET
+0.550 0.200 0.150 rg
+BT /F2 6.5 Tf 1 0 0 1 67.0 319.0 Tm (End: Transfer Rejected) Tj ET
+0.990 0.930 0.910 rg 0.600 0.250 0.180 RG 1.1 w 55.0 243.5 300.0 29.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 63.0 261.0 Tm (Display Insufficient Balance) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 63.0 250.0 Tm (FLOW-PAY-ALT-004 | BRD-PAY-003) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+535.0 258.0 m 355.0 258.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+360.4 255.4 m 355.0 258.0 l 360.4 260.6 l S
+0.550 0.200 0.150 rg
+BT /F2 7 Tf 1 0 0 1 429.0 262.0 Tm (No) Tj ET
+0.550 0.200 0.150 rg
+BT /F2 6.5 Tf 1 0 0 1 67.0 235.0 Tm (End: Transfer Rejected) Tj ET
+0.990 0.930 0.910 rg 0.600 0.250 0.180 RG 1.1 w 55.0 159.5 300.0 29.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 63.0 177.0 Tm (Display Transaction Limit Exceeded) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 63.0 166.0 Tm (FLOW-PAY-ALT-005 | BRD-PAY-006) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+535.0 174.0 m 355.0 174.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+360.4 171.4 m 355.0 174.0 l 360.4 176.6 l S
+0.550 0.200 0.150 rg
+BT /F2 7 Tf 1 0 0 1 429.0 178.0 Tm (No) Tj ET
+0.550 0.200 0.150 rg
+BT /F2 6.5 Tf 1 0 0 1 67.0 151.0 Tm (End: Transfer Rejected) Tj ET
+0.990 0.930 0.910 rg 0.600 0.250 0.180 RG 1.1 w 55.0 75.5 300.0 29.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 63.0 93.0 Tm (Display Duplicate Transaction) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 63.0 82.0 Tm (FLOW-PAY-ALT-006 | BRD-PAY-007) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+535.0 90.0 m 355.0 90.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+360.4 87.4 m 355.0 90.0 l 360.4 92.6 l S
+0.550 0.200 0.150 rg
+BT /F2 7 Tf 1 0 0 1 429.0 94.0 Tm (No) Tj ET
+0.550 0.200 0.150 rg
+BT /F2 6.5 Tf 1 0 0 1 67.0 67.0 Tm (End: Transfer Rejected) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+630.0 72.5 m 630.0 48.0 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+632.6 53.4 m 630.0 48.0 l 627.4 53.4 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 635.0 60.2 Tm (No) Tj ET
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 562.0 28.0 Tm (Continue on page 2: Submit Transaction) Tj ET
+0.970 0.980 0.990 rg 0.700 0.770 0.840 RG 0.8 w 905.0 405.0 270.0 295.0 re B
+0.100 0.240 0.380 rg
+BT /F2 9 Tf 1 0 0 1 917.0 680.0 Tm (Extraction Cues) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.5 Tf 1 0 0 1 920.0 655.0 Tm (Rectangle = activity or system action) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.5 Tf 1 0 0 1 920.0 637.0 Tm (Diamond = explicit decision point) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.5 Tf 1 0 0 1 920.0 619.0 Tm (Solid arrow = directed transition) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.5 Tf 1 0 0 1 920.0 601.0 Tm (YES and NO labels identify branches) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.5 Tf 1 0 0 1 920.0 583.0 Tm (Every step has a flow or BRD reference) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.5 Tf 1 0 0 1 920.0 565.0 Tm (All values in this PDF are fictional tokens) Tj ET
+0.100 0.240 0.380 rg
+BT /F2 8 Tf 1 0 0 1 920.0 525.0 Tm (Primary path starts here) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 507.0 Tm (Customer Login -> Select Fund Transfer) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 492.0 Tm (-> Enter Beneficiary Details) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 477.0 Tm (-> Account and beneficiary validation) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 462.0 Tm (-> Amount, balance, limit, duplicate checks) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 447.0 Tm (-> Submit Transaction on page 2) Tj ET
+0.100 0.240 0.380 rg
+BT /F2 8 Tf 1 0 0 1 920.0 420.0 Tm (Alternate paths on this page) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 402.0 Tm (ALT-001 invalid account details) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 388.0 Tm (ALT-002 invalid beneficiary) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 374.0 Tm (ALT-003 invalid amount) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 360.0 Tm (ALT-004 insufficient balance) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 346.0 Tm (ALT-005 transaction limit exceeded) Tj ET
+0.120 0.160 0.220 rg
+BT /F1 7.2 Tf 1 0 0 1 920.0 332.0 Tm (ALT-006 duplicate transaction) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1224 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+8 0 obj
+<< /Length 5257 >>
+stream
+0.080 0.200 0.340 rg
+BT /F2 18 Tf 1 0 0 1 48.0 765.0 Tm (Fund Transfer Flow - Processing and Outcomes) Tj ET
+0.320 0.390 0.470 rg
+BT /F1 8 Tf 1 0 0 1 48.0 748.0 Tm (Continuation from page 1 after duplicate check returns NO) Tj ET
+0.320 0.390 0.470 rg
+BT /F2 7 Tf 1 0 0 1 1050.0 765.0 Tm (PAGE 2 OF 2) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 489.5 685.0 245.0 30.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 497.5 703.0 Tm (Submit Transaction) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 497.5 692.0 Tm ([BRD-PAY-001]) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 489.5 630.0 245.0 30.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 497.5 648.0 Tm (Transaction Processing) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 497.5 637.0 Tm ([BRD-PAY-009]) Tj ET
+1.000 0.960 0.840 rg 0.620 0.450 0.100 RG 1.1 w 612.0 611.0 m 714.5 590.0 l 612.0 569.0 l 509.5 590.0 l h B
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 597.3 593.2 Tm (Payment) Tj ET
+0.280 0.200 0.060 rg
+BT /F2 7.0 Tf 1 0 0 1 595.2 585.2 Tm (Success?) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+612.0 685.0 m 612.0 660.0 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+614.6 665.4 m 612.0 660.0 l 609.4 665.4 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+612.0 630.0 m 612.0 611.0 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+614.6 616.4 m 612.0 611.0 l 609.4 616.4 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 616.0 624.5 Tm (Response) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 280.0 484.0 245.0 32.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 288.0 503.0 Tm (Generate Transaction Reference) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 288.0 492.0 Tm ([BRD-PAY-010]) Tj ET
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 280.0 419.0 245.0 32.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 288.0 438.0 Tm (Confirmation) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 288.0 427.0 Tm (FLOW-PAY-SUCCESS) Tj ET
+0.900 0.970 0.910 rg 0.160 0.450 0.240 RG 1.1 w 280.0 354.0 245.0 32.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 288.0 373.0 Tm (End - Successful Transfer) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 288.0 362.0 Tm (STATUS: CONFIRMED) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+510.0 590.0 m 402.0 516.0 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+407.9 516.9 m 402.0 516.0 l 405.0 521.2 l S
+0.220 0.320 0.450 rg
+BT /F2 7 Tf 1 0 0 1 453.0 558.0 Tm (Yes) Tj ET
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+280.0 484.0 m 280.0 451.0 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+282.6 456.4 m 280.0 451.0 l 277.4 456.4 l S
+0.220 0.320 0.450 RG 1.15 w
+[] 0 d
+280.0 419.0 m 280.0 386.0 l S
+[] 0 d
+0.220 0.320 0.450 RG 1.15 w
+282.6 391.4 m 280.0 386.0 l 277.4 391.4 l S
+0.910 0.950 0.980 rg 0.180 0.340 0.500 RG 1.1 w 855.0 484.0 245.0 32.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 863.0 503.0 Tm (Display Payment Processing Error) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 863.0 492.0 Tm ([BRD-PAY-009]) Tj ET
+0.990 0.930 0.910 rg 0.600 0.250 0.180 RG 1.1 w 855.0 419.0 245.0 32.0 re B
+0.080 0.150 0.240 rg
+BT /F2 8.2 Tf 1 0 0 1 863.0 438.0 Tm (End - Transfer Failed) Tj ET
+0.240 0.360 0.480 rg
+BT /F1 6.5 Tf 1 0 0 1 863.0 427.0 Tm (FLOW-PAY-EXC-001) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+714.0 590.0 m 977.0 516.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+972.5 520.0 m 977.0 516.0 l 971.1 515.0 l S
+0.550 0.200 0.150 rg
+BT /F2 7 Tf 1 0 0 1 848.5 558.0 Tm (No) Tj ET
+0.550 0.200 0.150 RG 1.15 w
+[] 0 d
+855.0 484.0 m 855.0 451.0 l S
+[] 0 d
+0.550 0.200 0.150 RG 1.15 w
+857.6 456.4 m 855.0 451.0 l 852.4 456.4 l S
+0.970 0.980 0.990 rg 0.700 0.770 0.840 RG 0.8 w 55.0 75.0 1115.0 235.0 re B
+0.100 0.240 0.380 rg
+BT /F2 9 Tf 1 0 0 1 67.0 290.0 Tm (Flow Path Catalog and Traceability) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 272.0 Tm (FLOW-PAY-MAIN   Login -> Select Transfer -> Beneficiary -> Amount -> Balance -> Limit -> Duplicate -> Submit -> Process) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 252.0 Tm (FLOW-PAY-SUCCESS   Payment Success? = YES -> Generate Transaction Reference -> Confirmation) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 232.0 Tm (FLOW-PAY-ALT-001   Account Details Valid? = NO -> Invalid Account Details -> Transfer Rejected) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 212.0 Tm (FLOW-PAY-ALT-002   Beneficiary Valid? = NO -> Invalid Beneficiary -> Transfer Rejected) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 192.0 Tm (FLOW-PAY-ALT-003   Amount Valid? = NO -> Amount Validation Error -> Transfer Rejected) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 172.0 Tm (FLOW-PAY-ALT-004   Balance Sufficient? = NO -> Insufficient Balance -> Transfer Rejected) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 152.0 Tm (FLOW-PAY-ALT-005   Within Daily Limit? = NO -> Limit Exceeded -> Transfer Rejected) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 132.0 Tm (FLOW-PAY-ALT-006   Duplicate Transaction? = YES -> Duplicate Transaction -> Transfer Rejected) Tj ET
+0.140 0.210 0.290 rg
+BT /F1 7.2 Tf 1 0 0 1 72.0 112.0 Tm (FLOW-PAY-EXC-001   Payment Success? = NO -> Processing Error -> Transfer Failed) Tj ET
+0.100 0.240 0.380 rg
+BT /F2 7.5 Tf 1 0 0 1 55.0 42.0 Tm (The success path is complete only after a processor success response and confirmation reference.) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000272 00000 n 
+0000000409 00000 n 
+0000013166 00000 n 
+0000013303 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+18611
+%%EOF

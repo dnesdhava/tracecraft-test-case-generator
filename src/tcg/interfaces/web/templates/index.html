@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Case Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">TC</div>
+        <div>
+          <strong>TraceCraft</strong>
+          <span>Test intelligence workspace</span>
+        </div>
+      </div>
+      <div class="sidebar-rule"></div>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-screen="dashboard"><span class="nav-icon">01</span>Dashboard</button>
+        <button class="nav-item" data-screen="documents"><span class="nav-icon">02</span>Documents</button>
+        <button class="nav-item" data-screen="generate"><span class="nav-icon">03</span>Generate Tests</button>
+        <button class="nav-item" data-screen="cases"><span class="nav-icon">04</span>Test Cases</button>
+        <button class="nav-item" data-screen="traceability"><span class="nav-icon">05</span>Traceability</button>
+        <button class="nav-item" data-screen="coverage"><span class="nav-icon">06</span>Coverage</button>
+        <button class="nav-item" data-screen="reports"><span class="nav-icon">07</span>Reports</button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="security-note"><span class="status-dot"></span><div><strong>Local workspace</strong><small>Evidence stays in this environment</small></div></div>
+        <div class="version-label">v0.1.0 · schema 1.0</div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb"><span>WORKSPACE</span><b>/</b><strong id="breadcrumb-label">Dashboard</strong></div>
+        <div class="topbar-actions">
+          <label class="run-picker">Run <select id="run-select" aria-label="Active generation run"><option value="">No active run</option></select></label>
+          <button class="button button-secondary" id="new-run-button">New run</button>
+          <button class="button button-primary" id="sample-button">Load sample set <span aria-hidden="true">&#8594;</span></button>
+        </div>
+      </header>
+
+      <div id="flash" class="flash" role="status" aria-live="polite"></div>
+
+      <section class="screen active" id="screen-dashboard" data-title="Dashboard">
+        <div class="screen-heading">
+          <div><p class="eyebrow">CONTROL CENTER</p><h1>Evidence workspace</h1><p class="subheading">Turn approved product evidence into reviewable, traceable test coverage.</p></div>
+          <div class="heading-status"><span class="status-dot"></span><span id="run-status">No run loaded</span></div>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card metric-blue"><div class="metric-label">Sources registered</div><div class="metric-value" id="metric-sources">0</div><div class="metric-caption">BRD, JIRA and flow evidence</div></article>
+          <article class="metric-card metric-gold"><div class="metric-label">Requirements mapped</div><div class="metric-value" id="metric-requirements">0</div><div class="metric-caption">Canonical behavior units</div></article>
+          <article class="metric-card metric-coral"><div class="metric-label">Test cases</div><div class="metric-value" id="metric-cases">0</div><div class="metric-caption" id="metric-cases-caption">0 awaiting review · 0 approved</div></article>
+          <article class="metric-card metric-green"><div class="metric-label">Scenario coverage</div><div class="metric-value" id="metric-coverage">0<span class="metric-suffix">%</span></div><div class="metric-caption">Applicable classes covered</div></article>
+        </div>
+        <div class="dashboard-grid">
+          <article class="panel readiness-panel"><div class="panel-header"><div><p class="eyebrow">RUN READINESS</p><h2>Evidence pipeline</h2></div><span class="badge badge-muted" id="readiness-badge">NOT STARTED</span></div><div class="pipeline-steps" id="pipeline-steps"></div><div class="panel-footer"><span id="readiness-caption">Load the sample set to begin.</span><button class="text-button" data-screen-target="documents">Open documents <span>&#8594;</span></button></div></article>
+          <article class="panel activity-panel"><div class="panel-header"><div><p class="eyebrow">SIGNALS</p><h2>Review signals</h2></div><span class="signal-count" id="warning-count">0</span></div><div id="signal-list" class="signal-list"></div></article>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-documents" data-title="Documents">
+        <div class="screen-heading"><div><p class="eyebrow">SOURCE INTAKE</p><h1>Documents</h1><p class="subheading">Register the evidence set before interpretation begins.</p></div><button class="button button-secondary" id="process-button">Validate documents <span aria-hidden="true">&#10003;</span></button></div>
+        <div class="document-grid">
+          <article class="panel upload-panel"><div class="panel-header"><div><p class="eyebrow">UPLOAD</p><h2>Add evidence</h2></div><span class="badge badge-blue">LOCAL ONLY</span></div><form id="upload-form"><label class="drop-zone" for="brd-file"><span class="drop-icon">XLSX</span><strong>BRD Excel workbook</strong><small>Business_Requirements and supporting sheets</small><input id="brd-file" name="brd_file" type="file" accept=".xlsx"></label><label class="drop-zone" for="flow-file"><span class="drop-icon">PDF</span><strong>E2E flow diagram</strong><small>Text-native or approved OCR path</small><input id="flow-file" name="flow_file" type="file" accept=".pdf"></label><div class="form-divider"><span>JIRA evidence</span></div><label class="field-label" for="jira-url">Story reference</label><input class="text-input" id="jira-url" name="jira_url" type="url" placeholder="https://jira.example.com/browse/PAY-101"><label class="field-label" for="jira-content">Story and acceptance criteria</label><textarea class="text-input textarea" id="jira-content" name="jira_content" rows="7" placeholder="Paste the approved story export or Markdown content"></textarea><div class="form-actions"><button class="button button-primary" type="submit">Register evidence <span>&#8594;</span></button><span class="form-hint">JIRA links are references; content is required for offline processing.</span></div></form></article>
+          <article class="panel source-panel"><div class="panel-header"><div><p class="eyebrow">REGISTERED SOURCES</p><h2>Evidence inventory</h2></div><span class="badge badge-muted" id="source-count-badge">0 SOURCES</span></div><div class="table-wrap"><table><thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Items</th><th>Confidence</th></tr></thead><tbody id="source-table"></tbody></table></div><div class="source-note"><span class="info-mark">i</span><span>Each source receives a checksum and provenance record. Unsupported or incomplete content remains visible for review.</span></div></article>
+        </div>
+        <article class="panel extraction-panel"><div class="panel-header"><div><p class="eyebrow">DOCUMENT VALIDATION</p><h2>Extracted evidence preview</h2></div><span class="badge badge-blue" id="extraction-count">0 ITEMS</span></div><div class="extraction-columns"><div><label>BRD requirements</label><div id="requirement-preview" class="preview-list"></div></div><div><label>JIRA acceptance criteria</label><div id="criteria-preview" class="preview-list"></div></div><div><label>Flow paths</label><div id="flow-preview" class="preview-list"></div></div></div></article>
+      </section>
+
+      <section class="screen" id="screen-generate" data-title="Generate Tests">
+        <div class="screen-heading"><div><p class="eyebrow">SCENARIO PLANNING</p><h1>Generate tests</h1><p class="subheading">Choose the evidence-grounded scenario classes for this run.</p></div><button class="button button-primary" id="generate-button">Generate recommendations <span>&#8594;</span></button></div>
+        <div class="generate-grid"><article class="panel scenario-panel"><div class="panel-header"><div><p class="eyebrow">TEST TYPES</p><h2>Coverage lens</h2></div><button class="text-button" id="select-all-types">Select all</button></div><div class="scenario-options" id="scenario-options"></div><div class="panel-footer"><span id="selected-type-caption">7 classes selected</span><span class="budget-note">Evidence budget: bounded per requirement</span></div></article><article class="panel plan-panel"><div class="panel-header"><div><p class="eyebrow">PLAN PREVIEW</p><h2>What will be considered</h2></div><span class="badge badge-gold" id="plan-count">0 PLANS</span></div><div id="plan-preview" class="plan-preview"></div></article></div>
+      </section>
+
+      <section class="screen" id="screen-cases" data-title="Test Cases">
+        <div class="screen-heading"><div><p class="eyebrow">REVIEW QUEUE</p><h1>Test cases</h1><p class="subheading">Inspect, edit, and approve evidence-backed recommendations.</p></div><div class="heading-actions"><button class="button button-secondary" id="validate-button">Run quality gates</button><button class="button button-primary" id="cases-export-button">Export reviewed</button></div></div>
+        <article class="panel cases-panel"><div class="toolbar"><div class="search-box"><span aria-hidden="true">&#8981;</span><input id="case-search" type="search" placeholder="Search scenarios, requirements, or test IDs" aria-label="Search test cases"></div><select id="case-type-filter" class="select-input" aria-label="Filter by test type"><option value="">All test types</option></select><select id="case-status-filter" class="select-input" aria-label="Filter by review status"><option value="">All review states</option><option value="DRAFT">Draft</option><option value="NEEDS_REVIEW">Needs review</option><option value="APPROVED">Approved</option><option value="REJECTED">Rejected</option></select><span class="toolbar-count" id="case-count">0 cases</span></div><div class="table-wrap case-table-wrap"><table class="case-table"><thead><tr><th>Test case</th><th>Requirement</th><th>Type</th><th>Priority</th><th>Validation</th><th>Review state</th><th></th></tr></thead><tbody id="case-table"></tbody></table><div class="empty-state" id="case-empty">No generated cases yet. Run generation to create recommendations.</div></div></article>
+      </section>
+
+      <section class="screen" id="screen-traceability" data-title="Traceability">
+        <div class="screen-heading"><div><p class="eyebrow">EVIDENCE GRAPH</p><h1>Traceability</h1><p class="subheading">Follow each behavior from BRD through JIRA, flow evidence, and test cases.</p></div><span class="heading-chip">Many-to-many mapping</span></div>
+        <article class="panel trace-panel"><div class="panel-header"><div><p class="eyebrow">REQUIREMENT COVERAGE MAP</p><h2>BRD <span class="muted-arrow">&#8594;</span> JIRA <span class="muted-arrow">&#8594;</span> Acceptance criteria <span class="muted-arrow">&#8594;</span> Flow <span class="muted-arrow">&#8594;</span> Test case</h2></div><span class="badge badge-muted" id="trace-count">0 REQUIREMENTS</span></div><div class="trace-list" id="trace-list"></div></article>
+      </section>
+
+      <section class="screen" id="screen-coverage" data-title="Coverage">
+        <div class="screen-heading"><div><p class="eyebrow">QUALITY SIGNAL</p><h1>Coverage</h1><p class="subheading">See what is covered, excluded by evidence, or still unresolved.</p></div><span class="heading-chip" id="coverage-average">0% average</span></div>
+        <div class="coverage-grid"><article class="panel coverage-overview"><div class="panel-header"><div><p class="eyebrow">SCENARIO MIX</p><h2>Applicable test types</h2></div></div><div id="coverage-bars" class="coverage-bars"></div></article><article class="panel gap-panel"><div class="panel-header"><div><p class="eyebrow">ATTENTION NEEDED</p><h2>Uncovered requirements</h2></div><span class="badge badge-coral" id="gap-count">0 GAPS</span></div><div id="gap-list" class="gap-list"></div></article></div><article class="panel coverage-table-panel"><div class="panel-header"><div><p class="eyebrow">REQUIREMENT DETAIL</p><h2>Coverage by requirement</h2></div></div><div class="table-wrap"><table><thead><tr><th>Requirement</th><th>Applicable</th><th>Covered</th><th>Unresolved</th><th>Coverage</th><th>State</th></tr></thead><tbody id="coverage-table"></tbody></table></div></article>
+      </section>
+
+      <section class="screen" id="screen-reports" data-title="Reports">
+        <div class="screen-heading"><div><p class="eyebrow">DELIVERY</p><h1>Reports & exports</h1><p class="subheading">Package validated evidence for review, handoff, or downstream tooling.</p></div><span class="heading-chip">Schema 1.0</span></div>
+        <div class="report-grid"><article class="panel report-card"><span class="report-icon report-icon-blue">JSON</span><div><h2>Structured cases</h2><p>Machine-readable test cases with metadata, statuses, and source references.</p></div><button class="button button-secondary export-action" data-format="json">Download JSON <span>&#8595;</span></button></article><article class="panel report-card"><span class="report-icon report-icon-green">CSV</span><div><h2>Review matrix</h2><p>Tabular output for QA review and spreadsheet-based handoff.</p></div><button class="button button-secondary export-action" data-format="csv">Download CSV <span>&#8595;</span></button></article><article class="panel report-card"><span class="report-icon report-icon-gold">XLSX</span><div><h2>Excel report</h2><p>Workbook export for teams working in Excel-based test management.</p></div><button class="button button-secondary export-action" data-format="xlsx">Download Excel <span>&#8595;</span></button></article></div>
+        <div class="report-summary-grid"><article class="panel report-list-panel"><div class="panel-header"><div><p class="eyebrow">REPORT VIEWS</p><h2>Run reports</h2></div></div><div class="report-links"><button class="report-link" data-report="summary"><span>Generation summary</span><span>&#8594;</span></button><button class="report-link" data-report="traceability"><span>Traceability matrix</span><span>&#8594;</span></button><button class="report-link" data-report="coverage"><span>Coverage report</span><span>&#8594;</span></button><button class="report-link" data-report="quality"><span>Quality gates</span><span>&#8594;</span></button><button class="report-link" data-report="review"><span>Review status</span><span>&#8594;</span></button></div></article><article class="panel report-output-panel"><div class="panel-header"><div><p class="eyebrow">REPORT PREVIEW</p><h2 id="report-title">Select a report</h2></div><span class="badge badge-blue" id="report-preview-badge">READABLE VIEW</span></div><div id="report-output" class="report-output"><div class="report-empty">Choose a report view to inspect its non-sensitive summary.</div></div></article></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="case-dialog" class="case-dialog">
+    <form method="dialog" id="case-form">
+      <div class="dialog-header"><div><p class="eyebrow">CASE REVIEW</p><h2 id="dialog-case-title">Test case</h2></div><button class="close-button" value="cancel" aria-label="Close">&#10005;</button></div>
+      <div class="dialog-meta" id="dialog-case-meta"></div>
+      <label class="field-label" for="edit-scenario">Scenario</label><textarea class="text-input textarea" id="edit-scenario" rows="3"></textarea>
+      <label class="field-label" for="edit-priority">Priority <small>reviewer assigned</small></label><select class="text-input" id="edit-priority"><option value="UNKNOWN">Unknown</option><option value="CRITICAL">Critical</option><option value="HIGH">High</option><option value="MEDIUM">Medium</option><option value="LOW">Low</option></select>
+      <label class="field-label" for="edit-preconditions">Preconditions <small>one per line</small></label><textarea class="text-input textarea" id="edit-preconditions" rows="3"></textarea>
+      <label class="field-label" for="edit-results">Expected results <small>one per line</small></label><textarea class="text-input textarea" id="edit-results" rows="3"></textarea>
+      <div class="dialog-evidence"><strong>Evidence</strong><div id="dialog-evidence-list"></div></div>
+      <div class="dialog-actions"><button class="button button-secondary" type="button" id="save-case-button">Save edits</button><button class="button button-danger" type="button" id="reject-case-button">Reject</button><button class="button button-primary" type="button" id="approve-case-button">Approve</button></div>
+    </form>
+  </dialog>
+  <script src="{{ url_for('static', filename='app.js', v='20260827-review-priority-report-fix') }}"></script>
+</body>
+</html>
