@@ -14,7 +14,7 @@ htmlcov/
 coverage.xml
 dist/
 build/
-storage/
+/storage/
 .playwright-mcp/
 .~lock.*#
 *.log
