@@ -59,13 +59,18 @@ GitHub Actions runs the locked lint, type-check, test, dependency-audit, secret-
 
 Successful pushes to `main` publish the Python wheel and source distribution as both a retained GitHub Actions artifact and a GitHub Release tagged with the workflow run number. The release deployment uses the exact package artifact produced by CI and GitHub's automatically provided `GITHUB_TOKEN`; no additional repository secret or variable is required. The workflow grants read-only contents access to CI and contents-write access only to the guarded release job.
 
-## Render Deployment
+## Google Cloud Run Deployment
 
-The repository includes a Render Blueprint in [render.yaml](render.yaml). It runs the Flask application with Gunicorn, uses the locked runtime dependencies, and exposes `/healthz` for service health checks. Create the service from the Blueprint in the Render account that owns the GitHub connection.
+The repository includes a [Dockerfile](Dockerfile) for Cloud Run. It runs the Flask application with Gunicorn, uses the locked runtime dependencies, and listens on Cloud Run's `PORT`. Deploy from the configured Google Cloud project with:
 
-Set `TCG_AI_API_KEY` as a Render environment secret on the service to enable Google AI Studio generation. Keep the key in Render's environment settings; do not put it in `render.yaml`, Git, or browser configuration. `TCG_AI_PROVIDER=google`, `TCG_AI_MODEL_ID=gemma-4-31b-it`, and the fallback behavior are configured by the Blueprint.
+```bash
+gcloud auth login
+gcloud config set project YOUR_PROJECT_ID
+gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com secretmanager.googleapis.com
+gcloud run deploy tracecraft-test-case-generator --source . --region YOUR_REGION --allow-unauthenticated
+```
 
-The baseline application stores runs and audit records on the local filesystem. Render's free service filesystem is ephemeral, so use a paid persistent disk or an external storage service before relying on the deployed instance for durable records.
+Store the Google AI Studio key in Secret Manager and attach it to the service as `TCG_AI_API_KEY`; never put the value in `Dockerfile`, Git, or browser configuration. The application uses `Gemma 4:31B` through model ID `gemma-4-31b-it`. The local filesystem used for runs and audit records is ephemeral on Cloud Run, so durable production records require an external storage service or a suitable persistent design.
 
 ## License
 
