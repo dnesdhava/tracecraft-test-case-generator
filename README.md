@@ -59,6 +59,14 @@ GitHub Actions runs the locked lint, type-check, test, dependency-audit, secret-
 
 Successful pushes to `main` publish the Python wheel and source distribution as a GitHub Release tagged with the workflow run number. The release deployment uses GitHub's automatically provided `GITHUB_TOKEN`; no additional repository secret or variable is required. The workflow grants read-only contents access to CI and contents-write access only to the guarded release job.
 
+## Render Deployment
+
+The repository includes a Render Blueprint in [render.yaml](render.yaml). It runs the Flask application with Gunicorn, uses the locked runtime dependencies, and exposes `/healthz` for service health checks. Create the service from the Blueprint in the Render account that owns the GitHub connection.
+
+Set `TCG_AI_API_KEY` as a Render environment secret on the service to enable Google AI Studio generation. Keep the key in Render's environment settings; do not put it in `render.yaml`, Git, or browser configuration. `TCG_AI_PROVIDER=google`, `TCG_AI_MODEL_ID=gemma-4-31b-it`, and the fallback behavior are configured by the Blueprint.
+
+The baseline application stores runs and audit records on the local filesystem. Render's free service filesystem is ephemeral, so use a paid persistent disk or an external storage service before relying on the deployed instance for durable records.
+
 ## License
 
 This project is available under the [MIT License](LICENSE).
