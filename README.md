@@ -53,6 +53,12 @@ PYTHONPATH=src python -m compileall -q src
 
 The generated cases remain recommendations until an authorized human reviewer approves them. Unsupported formats, ambiguous evidence, unresolved links, and review questions must remain visible rather than being converted into invented business behavior.
 
+## CI/CD
+
+GitHub Actions runs the locked lint, type-check, test, dependency-audit, secret-scan, and package-build checks for pushes and pull requests targeting `main`. Dependencies are resolved from `uv.lock` with `uv sync --locked --extra dev`.
+
+Successful pushes to `main` publish the Python wheel and source distribution as a GitHub Release tagged with the workflow run number. The release deployment uses GitHub's automatically provided `GITHUB_TOKEN`; no additional repository secret or variable is required. The workflow grants read-only contents access to CI and contents-write access only to the guarded release job.
+
 ## License
 
 This project is available under the [MIT License](LICENSE).
