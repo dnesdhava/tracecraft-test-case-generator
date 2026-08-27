@@ -86,7 +86,18 @@ jobs:
           COMMIT_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
-          gh release create "$RELEASE_TAG" dist/* \
-            --repo "$REPOSITORY" \
-            --title "TraceCraft build ${RELEASE_TAG}" \
-            --notes "Automated package build for ${COMMIT_SHA}."
+          if gh release view "$RELEASE_TAG" --repo "$REPOSITORY" >/dev/null 2>&1; then
+            echo "Release ${RELEASE_TAG} already exists; refreshing its package assets."
+            gh release edit "$RELEASE_TAG" \
+              --repo "$REPOSITORY" \
+              --title "TraceCraft build ${RELEASE_TAG}" \
+              --notes "Automated package build for ${COMMIT_SHA}."
+            gh release upload "$RELEASE_TAG" dist/* \
+              --repo "$REPOSITORY" \
+              --clobber
+          else
+            gh release create "$RELEASE_TAG" dist/* \
+              --repo "$REPOSITORY" \
+              --title "TraceCraft build ${RELEASE_TAG}" \
+              --notes "Automated package build for ${COMMIT_SHA}."
+          fi
